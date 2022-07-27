@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import { useNavigate  } from 'react-router-dom';
 import './style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import colorType from '../utils/ColorType';
 
 const PokemonDetail = () => {
 
@@ -40,6 +41,9 @@ const PokemonDetail = () => {
             <br />
             <div className='total-div'>
             <div className='first-div'>
+                <div className='color-div'
+                style={{background: colorType(pokemon.types?.[0]?.type.name)}}>
+                </div>
             <img 
             src={pokemon.sprites?.other.dream_world.front_default} 
             alt="" className='img-detail'/>
@@ -63,10 +67,12 @@ const PokemonDetail = () => {
                 <div className='vector3'></div>
                 <div className='vector4'></div>
                 <div className='queris-type'>
-                    <div className='type1'>
+                    <div className='type1'
+                    style={{background: colorType(pokemon.types?.[0]?.type.name)}}>
                         {pokemon.types?.[0].type.name}
                     </div>
-                    <div className='type2'>
+                    <div className='type2'
+                    style={{background: colorType(pokemon.types?.[1]?.type.name)}}>
                         {pokemon.types?.[1].type.name}
                     </div>
                 </div>
