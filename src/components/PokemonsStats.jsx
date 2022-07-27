@@ -19,12 +19,24 @@ const PokemonsStats = ({ pokemonUrl }) => {
         className='pokemon-container'
         style={{background: colorType(pokemons.types?.[0]?.type.name)}}>
             <div>
-            <p className='pokemon-name' style={{color: "white"}}><b>{pokemons.name}</b></p>
-            <div className='pokemon-type' style={{color: "white"}}>type :{pokemons.types?.[0]?.type.name}, <br />{pokemons.types?.[1]?.type.name}</div>
-            <div className='pokemon-type' style={{color: "white"}}>Hp: {pokemons.stats?.[0].base_stat}</div>
-            <div className='pokemon-type' style={{color: "white"}}>Attack: {pokemons.stats?.[1].base_stat}</div>
-            <div className='pokemon-type' style={{color: "white"}}>Defense: {pokemons.stats?.[2].base_stat}</div>
-            <div className='pokemon-type' style={{color: "white"}}>Speed: {pokemons.stats?.[5].base_stat}</div>
+            <p className='pokemon-name' 
+            style={{color: "white"}}><b>{pokemons.name}</b></p>
+            <div className='pokemon-type' 
+            style={{color: "white"}}>
+                type :{pokemons.types?.[0]?.type.name}, <br />
+                {pokemons.types?.[1]?.type.name}</div>
+            <div className='pokemon-type' 
+            style={{color: "white"}}>
+                Hp: {pokemons.stats?.[0].base_stat}</div>
+            <div className='pokemon-type' 
+            style={{color: "white"}}>
+                Attack: {pokemons.stats?.[1].base_stat}</div>
+            <div className='pokemon-type' 
+            style={{color: "white"}}>
+                Defense: {pokemons.stats?.[2].base_stat}</div>
+            <div className='pokemon-type' 
+            style={{color: "white"}}>
+                Speed: {pokemons.stats?.[5].base_stat}</div>
             </div>
             <div>
             <img src={pokemons.sprites?.other.dream_world.front_default} className='pokemon-img' alt="" />

@@ -74,7 +74,7 @@ const Pokedex = ({ rounded = true }) => {
             <br />
             <br />
             <h1>Pokedex</h1>
-            <h3><span className='span-color'>Welcome {user}</span> here you can find your pokemon...</h3>
+            <h3><span className='span-color'>Welcome {user}</span> here you can <br />find your pokemon...</h3>
             <div className='toggle-input'>
 {/*                 <label className='switch'>
                     <input 

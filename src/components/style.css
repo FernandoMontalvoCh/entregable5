@@ -731,6 +731,19 @@ input:checked + .slider:before {
     
         border: 1px solid #9F9F9F;
     }
+    .search-input {
+        width: 230px;
+        height: 35px;
+        border-radius: 5px;
+    }
+    .select {
+        width: 300px;
+    }
+    .pokedex-label {
+        height: 100px;
+        width: 300px;
+        margin-top: 1rem;
+    }
 }
 
 @media (max-width: 800px) {
