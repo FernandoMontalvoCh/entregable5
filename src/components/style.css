@@ -56,6 +56,16 @@
     top: 26px;
 }
 
+.button-page {
+    text-align: center;
+}
+
+.np-button {
+    border-radius: 2rem;
+    background: aquamarine;
+    border: none;
+}
+
 .name {
     margin-left: 0.8rem;
     font-size: 18px;

@@ -118,22 +118,24 @@ const Pokedex = ({ rounded = true }) => {
                     ))
                 }
             </ul>
-            <button className='np-button'
-            onClick={()=> setPage(page-1)}
-            disabled={page === 1}>
-                <i class="fa-solid fa-backward-step"></i>
-            </button>
-            {numbers.map( number =>(
+            <div className='button-page'>
                 <button className='np-button'
-                onClick={() => setPage(number)}>
-                    {number}
+                onClick={()=> setPage(page-1)}
+                disabled={page === 1}>
+                    <i class="fa-solid fa-backward-step"></i>
                 </button>
-            ))}
-            <button className='np-button'
-            onClick={()=> setPage(page+1)}
-            disabled={page === lastPage}>
-                <i class="fa-solid fa-forward-step"></i>
-            </button>
+                {numbers.map( number =>(
+                    <button className='np-button'
+                    onClick={() => setPage(number)}>
+                        {number}
+                    </button>
+                ))}
+                <button className='np-button'
+                onClick={()=> setPage(page+1)}
+                disabled={page === lastPage}>
+                    <i class="fa-solid fa-forward-step"></i>
+                </button>
+            </div>
         </div>
     );
 };
