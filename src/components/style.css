@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+
+.input-container {
+    width: 300px;
+    height: 320px;
+    margin: 0 auto;
+    margin-top: 5rem;
+    font-family: 'Kanit', sans-serif;
+}
+
+.img-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-bottom: 10rem;
+}
+
+.img-pikachu {
+    height: 420px;
+    width: 150px;
+    position: absolute;
+    top: 2rem;
+}
+
+.h1-input {
+    position: absolute;
+}
+
+.input-position {
+    bottom: 10rem;
+    position: absolute;
+}
+@media (max-width: 525px) {
+    .input-position{
+        bottom: 7.5rem;
+    } 
+}
+
+.edit-input {
+    height: 39px;
+    width: 300px;
+    border-radius: 2rem;
+    outline: none;
+    font-size: 18px;
+    border: none;
+}
+
+.button-input {
+    background: lightgreen;
+    border: none;
+    border-radius: 2rem;
+    height: 40px;
+    position: absolute;
+    left: 17rem;
+    cursor: pointer;
+    top: 26px;
+}
+
+.name {
+    margin-left: 0.8rem;
+    font-size: 18px;
+}
+
+.toggle-input {
+    display: flex;
+    justify-content: center;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: #ccc;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #2196f3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.slider.rounded {
+    border-radius: 34px;
+}
+
+.slider.rounded:before {
+    border-radius: 50%;
+}
+
+.select {
+    width: 350px;
+}
+
+.search {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.search-input {
+    width: 300px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+.btn {
+    margin-bottom: 5px;
+    height: 35px;
+}
+
+.searchnselect {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.pokemons-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.red-div {
+    position: absolute;
+    width: 1440px;
+    height: 123.18px;
+    left: 0px;
+    top: 0px;
+    
+    background: #DD1A1A;
+}
+
+.black-div {
+    position: absolute;
+    width: 1440px;
+    height: 49.7px;
+    left: 0px;
+    top: 111.3px;
+
+    background: #0C0C0C;
+}
+
+.eclipse {
+    box-sizing: border-box;
+
+    position: absolute;
+    border-radius: 50%;
+    width: 117px;
+    height: 117px;
+    left: 1208px;
+    top: 78px;
+
+    background: #FFFFFF;
+    border: 12px solid #000000;
+}
+
+.eclipse2 {
+    box-sizing: border-box;
+
+    position: absolute;
+    border-radius: 50%;
+    width: 63px;
+    height: 63px;
+    left: 1235px;
+    top: 105px;
+
+    background: #212121;
+    border: 12px solid #000000;
+}
+
+.pokedex-label {
+    height: 100px;
+    width: 400px;
+    margin-top: 1rem;
+}
+
+.span-color {
+    color: #DD1A1A;
+}
+
+.background-user {
+    background: url("https://i.pinimg.com/originals/a1/86/a8/a186a8aff83506c70b0b307e3fb062c8.png");
+    min-width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+}
+
+.pokemon-container {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    height: 320px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, .3);
+    border-radius: 2rem;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    font-family: 'Kanit', sans-serif;
+}
+
+.pokemon-type {
+    background: hsla(0,0%,100%,.2);
+    margin-bottom: 3px;
+    padding: 4px 10px;
+    border-radius: 13px;
+}
+
+@media (min-width: 400px){
+    .pokemon-type {
+        margin-bottom: 5px;
+    }
+}
+
+.pokemon-img {
+    height: 150px;
+    width: 150px;
+    margin-top: 6rem;
+    margin-left: 1rem;
+}
+
+.pokemon-name {
+    margin-left: 1rem;
+    font-size: 20px;
+}
+
+.first-div {
+    width: 800px;
+    height: 400px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, .3);
+    margin-left: 8rem;
+    margin-top: 8rem;
+}
+
+.img-detail {
+    position: absolute;
+    right: 43rem;
+    top: 15rem;
+    height: 300px;
+    width: 300px;
+}
+
+.weight-div {
+    position: absolute;
+    right: 62rem;
+    top: 32rem;
+}
+
+.height-div {
+    position: absolute;
+    right: 40rem;
+    top: 32rem;
+}
+
+.numbers-div1 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.h2-div1 {
+    position: absolute;
+    right: 47rem;
+    top: 37rem;
+}
+
+.id-div {
+    position: absolute;
+    text-align: center;
+    right: 50.5rem;
+    top: 40.5rem;
+    width: 45px;
+    height: 35px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .1);
+}
+
+.vector1 {
+    position: absolute;
+    width: 313.5px;
+    height: 0px;
+    left: 150px;
+    top: 646px;
+
+    border: 1px solid #9F9F9F;
+}
+
+.vector2 {
+    position: absolute;
+    width: 313.5px;
+    height: 0px;
+    left: 585px;
+    top: 646px;
+
+    border: 1px solid #9F9F9F;
+}
+
+.type-div {
+    width: 400px;
+    height: 200px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, .3);
+    margin-left: 8rem;
+    margin-top: 2rem;
+}
+
+.type-div h2 {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.vector3 {
+    position: absolute;
+    width: 140px;
+    height: 0px;
+    left: 370px;
+    top: 805px;
+
+    border: 1px solid #9F9F9F;
+}
+
+.vector4 {
+    position: absolute;
+    width: 140px;
+    height: 0px;
+    left: 150px;
+    top: 805px;
+
+    border: 1px solid #9F9F9F;
+}
+
+.type1 {
+    width: 155px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid black;
+    position: absolute;
+    top: 54rem;
+    left: 9.5rem;
+    border-radius: 5px;
+}
+
+.type2 {
+    width: 155px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid black;
+    position: absolute;
+    top: 54rem;
+    left: 22rem;
+    border-radius: 5px;
+}
+
+.ability-div {
+    width: 368px;
+    height: 150px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, .3);
+    margin-top: 2rem;
+    position: absolute;
+    left: 35rem;
+    top: 46rem;
+}
+
+.ability-div h2 {
+    text-align: center;
+    padding-top: 0.5rem;
+}
+
+.vector5 {
+    position: absolute;
+    width: 100px;
+    height: 0px;
+    left: 15px;
+    top: 30px;
+
+    border: 1px solid #9F9F9F;
+}
+
+.vector6 {
+    position: absolute;
+    width: 100px;
+    height: 0px;
+    left: 250px;
+    top: 30px;
+
+    border: 1px solid #9F9F9F;
+}
+
+.ability1 {
+    width: 140px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid black;
+    position: absolute;
+    top: 4rem;
+    left: 1rem;
+    border-radius: 5px;
+}
+
+.ability2 {
+    width: 140px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid black;
+    position: absolute;
+    top: 4rem;
+    left: 13.3rem;
+    border-radius: 5px;
+}
+
+.movements-div {
+    width: 250px;
+    height: 1900px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, .3);
+    position: absolute;
+    right: 6rem;
+    top: 20rem;
+}
+
+.movements-div h2 {
+    text-align: center;
+}
+
+.movements-div div {
+    text-align: center;
+    text-decoration-line: underline;
+}
+.button-encounters {
+    position: absolute;
+    right: 6rem;
+    top: 21rem;
+}
+
+.button-detail {
+    width: 250px;
+}
+
+.stats-div {
+    width: 800px;
+    height: 200px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, .3);
+    margin-left: 8rem;
+    margin-top: 2rem;
+}
+.stats-div h2 {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.vector7 {
+    position: absolute;
+    width: 300px;
+    height: 0px;
+    left: 150px;
+    top: 1035px;
+
+    border: 1px solid #9F9F9F;
+}
+
+.vector8 {
+    position: absolute;
+    width: 300px;
+    height: 0px;
+    left: 610px;
+    top: 1035px;
+
+    border: 1px solid #9F9F9F;
+}
+
+.first-stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.first-stats div {
+    width: 75px;
+    height: 50px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .1);
+}
+
+.button-back-detail {
+    border-radius: 2rem;
+    border: none;
+}
+
+@media (max-width: 525px) {
+    .total-div{
+        display: flex;
+        flex-direction: column;
+
+    } 
+}
