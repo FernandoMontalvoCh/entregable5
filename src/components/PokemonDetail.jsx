@@ -69,11 +69,11 @@ const PokemonDetail = () => {
                 <div className='queris-type'>
                     <div className='type1'
                     style={{background: colorType(pokemon.types?.[0]?.type.name)}}>
-                        {pokemon.types?.[0].type.name}
+                        {pokemon.types?.[0]?.type.name}
                     </div>
                     <div className='type2'
                     style={{background: colorType(pokemon.types?.[1]?.type.name)}}>
-                        {pokemon.types?.[1].type.name}
+                        {pokemon.types?.[1]?.type.name}
                     </div>
                 </div>
             </div>
@@ -82,8 +82,8 @@ const PokemonDetail = () => {
                 <div className='vector5'></div>
                 <div className='vector6'></div>
                 <div className='queries-ability'>
-                    <div className='ability1'>{pokemon.abilities?.[0].ability.name}</div>
-                    <div className='ability2'>{pokemon.abilities?.[1].ability.name}</div>
+                    <div className='ability1'>{pokemon.abilities?.[0]?.ability.name}</div>
+                    <div className='ability2'>{pokemon.abilities?.[1]?.ability.name}</div>
                 </div>
             </div>
             <div className='stats-div'>
@@ -91,13 +91,13 @@ const PokemonDetail = () => {
                 <div className='vector7'></div>
                 <div className='vector8'></div>
                 <div className='first-stats'>
-                <div>Hp: {pokemon.stats?.[0].base_stat}</div>
-                <div>Attack: {pokemon.stats?.[1].base_stat}</div>
+                <div>Hp: {pokemon.stats?.[0]?.base_stat}</div>
+                <div>Attack: {pokemon.stats?.[1]?.base_stat}</div>
                 </div>
                 <br />
                 <div className='first-stats'>
-                <div>Defense: {pokemon.stats?.[2].base_stat}</div>
-                <div>Speed: {pokemon.stats?.[5].base_stat}</div>
+                <div>Defense: {pokemon.stats?.[2]?.base_stat}</div>
+                <div>Speed: {pokemon.stats?.[5]?.base_stat}</div>
                 </div>
             </div>
 {/*             <div className='button-encounters'>
@@ -105,83 +105,83 @@ const PokemonDetail = () => {
             </div> */}
             <div className='movements-div'>
                 <h2>Movements</h2>
-                <div>{pokemon.moves?.[0].move.name}</div>
-                <div>{pokemon.moves?.[1].move.name}</div>
-                <div>{pokemon.moves?.[2].move.name}</div>
-                <div>{pokemon.moves?.[3].move.name}</div>
-                <div>{pokemon.moves?.[4].move.name}</div>
-                <div>{pokemon.moves?.[5].move.name}</div>
-                <div>{pokemon.moves?.[6].move.name}</div>
-                <div>{pokemon.moves?.[7].move.name}</div>
-                <div>{pokemon.moves?.[8].move.name}</div>
-                <div>{pokemon.moves?.[9].move.name}</div>
-                <div>{pokemon.moves?.[10].move.name}</div>
-                <div>{pokemon.moves?.[11].move.name}</div>
-                <div>{pokemon.moves?.[12].move.name}</div>
-                <div>{pokemon.moves?.[13].move.name}</div>
-                <div>{pokemon.moves?.[14].move.name}</div>
-                <div>{pokemon.moves?.[15].move.name}</div>
-                <div>{pokemon.moves?.[16].move.name}</div>
-                <div>{pokemon.moves?.[17].move.name}</div>
-                <div>{pokemon.moves?.[18].move.name}</div>
-                <div>{pokemon.moves?.[19].move.name}</div>
-                <div>{pokemon.moves?.[20].move.name}</div>
-                <div>{pokemon.moves?.[21].move.name}</div>
-                <div>{pokemon.moves?.[22].move.name}</div>
-                <div>{pokemon.moves?.[23].move.name}</div>
-                <div>{pokemon.moves?.[24].move.name}</div>
-                <div>{pokemon.moves?.[25].move.name}</div>
-                <div>{pokemon.moves?.[26].move.name}</div>
-                <div>{pokemon.moves?.[27].move.name}</div>
-                <div>{pokemon.moves?.[28].move.name}</div>
-                <div>{pokemon.moves?.[29].move.name}</div>
-                <div>{pokemon.moves?.[30].move.name}</div>
-                <div>{pokemon.moves?.[31].move.name}</div>
-                <div>{pokemon.moves?.[32].move.name}</div>
-                <div>{pokemon.moves?.[33].move.name}</div>
-                <div>{pokemon.moves?.[34].move.name}</div>
-                <div>{pokemon.moves?.[35].move.name}</div>
-                <div>{pokemon.moves?.[36].move.name}</div>
-                <div>{pokemon.moves?.[37].move.name}</div>
-                <div>{pokemon.moves?.[38].move.name}</div>
-                <div>{pokemon.moves?.[39].move.name}</div>
-                <div>{pokemon.moves?.[40].move.name}</div>
-                <div>{pokemon.moves?.[41].move.name}</div>
-                <div>{pokemon.moves?.[42].move.name}</div>
-                <div>{pokemon.moves?.[43].move.name}</div>
-                <div>{pokemon.moves?.[44].move.name}</div>
-                <div>{pokemon.moves?.[45].move.name}</div>
-                <div>{pokemon.moves?.[46].move.name}</div>
-                <div>{pokemon.moves?.[47].move.name}</div>
-                <div>{pokemon.moves?.[48].move.name}</div>
-                <div>{pokemon.moves?.[49].move.name}</div>
-                <div>{pokemon.moves?.[50].move.name}</div>
-                <div>{pokemon.moves?.[51].move.name}</div>
-                <div>{pokemon.moves?.[52].move.name}</div>
-                <div>{pokemon.moves?.[53].move.name}</div>
-                <div>{pokemon.moves?.[54].move.name}</div>
-                <div>{pokemon.moves?.[55].move.name}</div>
-                <div>{pokemon.moves?.[56].move.name}</div>
-                <div>{pokemon.moves?.[57].move.name}</div>
-                <div>{pokemon.moves?.[58].move.name}</div>
-                <div>{pokemon.moves?.[59].move.name}</div>
-                <div>{pokemon.moves?.[60].move.name}</div>
-                <div>{pokemon.moves?.[61].move.name}</div>
-                <div>{pokemon.moves?.[62].move.name}</div>
-                <div>{pokemon.moves?.[63].move.name}</div>
-                <div>{pokemon.moves?.[64].move.name}</div>
-                <div>{pokemon.moves?.[65].move.name}</div>
-                <div>{pokemon.moves?.[66].move.name}</div>
-                <div>{pokemon.moves?.[67].move.name}</div>
-                <div>{pokemon.moves?.[68].move.name}</div>
-                <div>{pokemon.moves?.[69].move.name}</div>
-                <div>{pokemon.moves?.[70].move.name}</div>
-                <div>{pokemon.moves?.[71].move.name}</div>
-                <div>{pokemon.moves?.[72].move.name}</div>
-                <div>{pokemon.moves?.[73].move.name}</div>
-                <div>{pokemon.moves?.[74].move.name}</div>
-                <div>{pokemon.moves?.[75].move.name}</div>
-                <div>{pokemon.moves?.[76].move.name}</div>
+                <div>{pokemon.moves?.[0]?.move.name}</div>
+                <div>{pokemon.moves?.[1]?.move.name}</div>
+                <div>{pokemon.moves?.[2]?.move.name}</div>
+                <div>{pokemon.moves?.[3]?.move.name}</div>
+                <div>{pokemon.moves?.[4]?.move.name}</div>
+                <div>{pokemon.moves?.[5]?.move.name}</div>
+                <div>{pokemon.moves?.[6]?.move.name}</div>
+                <div>{pokemon.moves?.[7]?.move.name}</div>
+                <div>{pokemon.moves?.[8]?.move.name}</div>
+                <div>{pokemon.moves?.[9]?.move.name}</div>
+                <div>{pokemon.moves?.[10]?.move.name}</div>
+                <div>{pokemon.moves?.[11]?.move.name}</div>
+                <div>{pokemon.moves?.[12]?.move.name}</div>
+                <div>{pokemon.moves?.[13]?.move.name}</div>
+                <div>{pokemon.moves?.[14]?.move.name}</div>
+                <div>{pokemon.moves?.[15]?.move.name}</div>
+                <div>{pokemon.moves?.[16]?.move.name}</div>
+                <div>{pokemon.moves?.[17]?.move.name}</div>
+                <div>{pokemon.moves?.[18]?.move.name}</div>
+                <div>{pokemon.moves?.[19]?.move.name}</div>
+                <div>{pokemon.moves?.[20]?.move.name}</div>
+                <div>{pokemon.moves?.[21]?.move.name}</div>
+                <div>{pokemon.moves?.[22]?.move.name}</div>
+                <div>{pokemon.moves?.[23]?.move.name}</div>
+                <div>{pokemon.moves?.[24]?.move.name}</div>
+                <div>{pokemon.moves?.[25]?.move.name}</div>
+                <div>{pokemon.moves?.[26]?.move.name}</div>
+                <div>{pokemon.moves?.[27]?.move.name}</div>
+                <div>{pokemon.moves?.[28]?.move.name}</div>
+                <div>{pokemon.moves?.[29]?.move.name}</div>
+                <div>{pokemon.moves?.[30]?.move.name}</div>
+                <div>{pokemon.moves?.[31]?.move.name}</div>
+                <div>{pokemon.moves?.[32]?.move.name}</div>
+                <div>{pokemon.moves?.[33]?.move.name}</div>
+                <div>{pokemon.moves?.[34]?.move.name}</div>
+                <div>{pokemon.moves?.[35]?.move.name}</div>
+                <div>{pokemon.moves?.[36]?.move.name}</div>
+                <div>{pokemon.moves?.[37]?.move.name}</div>
+                <div>{pokemon.moves?.[38]?.move.name}</div>
+                <div>{pokemon.moves?.[39]?.move.name}</div>
+                <div>{pokemon.moves?.[40]?.move.name}</div>
+                <div>{pokemon.moves?.[41]?.move.name}</div>
+                <div>{pokemon.moves?.[42]?.move.name}</div>
+                <div>{pokemon.moves?.[43]?.move.name}</div>
+                <div>{pokemon.moves?.[44]?.move.name}</div>
+                <div>{pokemon.moves?.[45]?.move.name}</div>
+                <div>{pokemon.moves?.[46]?.move.name}</div>
+                <div>{pokemon.moves?.[47]?.move.name}</div>
+                <div>{pokemon.moves?.[48]?.move.name}</div>
+                <div>{pokemon.moves?.[49]?.move.name}</div>
+                <div>{pokemon.moves?.[50]?.move.name}</div>
+                <div>{pokemon.moves?.[51]?.move.name}</div>
+                <div>{pokemon.moves?.[52]?.move.name}</div>
+                <div>{pokemon.moves?.[53]?.move.name}</div>
+                <div>{pokemon.moves?.[54]?.move.name}</div>
+                <div>{pokemon.moves?.[55]?.move.name}</div>
+                <div>{pokemon.moves?.[56]?.move.name}</div>
+                <div>{pokemon.moves?.[57]?.move.name}</div>
+                <div>{pokemon.moves?.[58]?.move.name}</div>
+                <div>{pokemon.moves?.[59]?.move.name}</div>
+                <div>{pokemon.moves?.[60]?.move.name}</div>
+                <div>{pokemon.moves?.[61]?.move.name}</div>
+                <div>{pokemon.moves?.[62]?.move.name}</div>
+                <div>{pokemon.moves?.[63]?.move.name}</div>
+                <div>{pokemon.moves?.[64]?.move.name}</div>
+                <div>{pokemon.moves?.[65]?.move.name}</div>
+                <div>{pokemon.moves?.[66]?.move.name}</div>
+                <div>{pokemon.moves?.[67]?.move.name}</div>
+                <div>{pokemon.moves?.[68]?.move.name}</div>
+                <div>{pokemon.moves?.[69]?.move.name}</div>
+                <div>{pokemon.moves?.[70]?.move.name}</div>
+                <div>{pokemon.moves?.[71]?.move.name}</div>
+                <div>{pokemon.moves?.[72]?.move.name}</div>
+                <div>{pokemon.moves?.[73]?.move.name}</div>
+                <div>{pokemon.moves?.[74]?.move.name}</div>
+                <div>{pokemon.moves?.[75]?.move.name}</div>
+                <div>{pokemon.moves?.[76]?.move.name}</div>
             </div>
             </div>
         </div>

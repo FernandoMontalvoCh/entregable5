@@ -978,7 +978,7 @@ input:checked + .slider:before {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-top: 10rem;
+        margin-top: 6rem;
     }
     .weight-div {
         position: relative;
