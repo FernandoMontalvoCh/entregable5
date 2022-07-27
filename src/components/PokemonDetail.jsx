@@ -43,36 +43,42 @@ const PokemonDetail = () => {
             <img 
             src={pokemon.sprites?.other.dream_world.front_default} 
             alt="" className='img-detail'/>
-            <div className='weight-div'>
-            <div className='numbers-div1'><b>{pokemon.weight}</b></div>
-            <div>Weight</div>
-            </div>
-            <div className='height-div'>
-            <div className='numbers-div1'><b>{pokemon.height}</b></div>
-            <div>Height</div>
-            </div>
-            <div className='vector1'></div>
-            <div className='vector2'></div>
-            <h2 className='h2-div1'>{pokemon.name}</h2>
-            <div className='id-div'># {pokemon.id}</div>
+            <div className='w-h-div'>
+                <div className='weight-div'>
+                <div className='numbers-div1'><b>{pokemon.weight}</b></div>
+                <div>Weight</div>
+                </div>
+                <div className='height-div'>
+                <div className='numbers-div1'><b>{pokemon.height}</b></div>
+                <div>Height</div>
+                </div>
+                </div>
+                <div className='vector1'></div>
+                <div className='vector2'></div>
+                <h2 className='h2-div1'>{pokemon.name}</h2>
+                <div className='id-div'># {pokemon.id}</div>
             </div>
             <div className='type-div'>
                 <h2>Type</h2>
                 <div className='vector3'></div>
                 <div className='vector4'></div>
-                <div className='type1'>
-                    {pokemon.types?.[0].type.name}
-                </div>
-                <div className='type2'>
-                    {pokemon.types?.[1].type.name}
+                <div className='queris-type'>
+                    <div className='type1'>
+                        {pokemon.types?.[0].type.name}
+                    </div>
+                    <div className='type2'>
+                        {pokemon.types?.[1].type.name}
+                    </div>
                 </div>
             </div>
             <div className='ability-div'>
                 <h2>Abilities</h2>
                 <div className='vector5'></div>
                 <div className='vector6'></div>
-                <div className='ability1'>{pokemon.abilities?.[0].ability.name}</div>
-                <div className='ability2'>{pokemon.abilities?.[1].ability.name}</div>
+                <div className='queries-ability'>
+                    <div className='ability1'>{pokemon.abilities?.[0].ability.name}</div>
+                    <div className='ability2'>{pokemon.abilities?.[1].ability.name}</div>
+                </div>
             </div>
             <div className='stats-div'>
                 <h2>Stats Base</h2>

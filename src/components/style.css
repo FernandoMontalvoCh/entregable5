@@ -520,4 +520,206 @@ input:checked + .slider:before {
         flex-direction: column;
 
     } 
+    .first-div {
+        width: 365px;
+        height: 400px;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, .3);
+        position: static;
+        margin-left: 0.5rem;
+        margin-top: 2rem;
+    }
+    .img-detail {
+        position: absolute;
+        right: 7rem;
+        top: 10rem;
+        height: 200px;
+        width: 200px;
+    }
+    .w-h-div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 10rem;
+    }
+    .weight-div {
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+    .height-div {
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+    .h2-div1 {
+        position: relative;
+        right: 0;
+        top: 0;
+        margin-left: 8rem;
+    }
+    .id-div {
+        position: relative;
+        text-align: center;
+        right: 0;
+        top: 0;
+        width: 45px;
+        height: 35px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, .1);
+        margin-left: 10rem;
+        margin-top: 2rem;
+    }
+    .type-div {
+        width: 365px;
+        height: 200px;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, .3);
+        position: static;
+        margin-left: 0.5rem;
+        margin-top: 2rem;
+    }
+    .ability-div{
+        width: 368px;
+        height: 150px;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, .3); 
+        position: static; 
+        margin-left: 0.5rem;
+        margin-top: 2rem;
+    }
+    .stats-div{
+        width: 365px;
+        height: 200px;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, .3);
+        position: static;
+        margin-left: 0.5rem;
+        margin-top: 2rem;
+    }
+    .movements-div{
+        width: 250px;
+        height: 1900px;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, .3);
+        position: static;
+        margin-left: 4rem;
+        margin-top: 2rem;
+    }
+    .queries-ability{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .ability1{
+        width: 140px;
+        height: 40px;
+        text-align: center;
+        border: 1px solid black;
+        position: relative;
+        top: 0;
+        left: 0;
+        border-radius: 5px;
+    }
+    .ability2{
+        width: 140px;
+        height: 40px;
+        text-align: center;
+        border: 1px solid black;
+        position: relative;
+        top: 0;
+        left: 0;
+        border-radius: 5px;
+    }
+    .queris-type{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .type1{
+        width: 155px;
+        height: 40px;
+        text-align: center;
+        border: 1px solid black;
+        position: relative;
+        top: 0;
+        left: 0;
+        border-radius: 5px;
+    }
+    .type2{
+        width: 155px;
+        height: 40px;
+        text-align: center;
+        border: 1px solid black;
+        position: relative;
+        top: 0;
+        left: 0;
+        border-radius: 5px;
+    }
+    .vector1 {
+        position: relative;
+        width: 0;
+        height: 0px;
+        left: 0;
+        top: 0;
+    
+        border: 1px solid #9F9F9F;
+    }
+    .vector2 {
+        position: relative;
+        width: 0;
+        height: 0px;
+        left: 0;
+        top: 0;
+    
+        border: 1px solid #9F9F9F;
+    }
+    .vector3 {
+        position: relative;
+        width: 0;
+        height: 0px;
+        left: 0;
+        top: 0;
+    
+        border: 1px solid #9F9F9F;
+    }
+    .vector4 {
+        position: relative;
+        width: 0;
+        height: 0px;
+        left: 0;
+        top: 0;
+    
+        border: 1px solid #9F9F9F;
+    }
+    .vector5 {
+        position: relative;
+        width: 0;
+        height: 0px;
+        left: 0;
+        top: 0;
+    
+        border: 1px solid #9F9F9F;
+    }
+    .vector6 {
+        position: relative;
+        width: 0;
+        height: 0px;
+        left: 0;
+        top: 0;
+    
+        border: 1px solid #9F9F9F;
+    }
+    .vector7 {
+        position: relative;
+        width: 0;
+        height: 0px;
+        left: 0;
+        top: 0;
+    
+        border: 1px solid #9F9F9F;
+    }
+    .vector8 {
+        position: relative;
+        width: 0;
+        height: 0px;
+        left: 0;
+        top: 0;
+    
+        border: 1px solid #9F9F9F;
+    }
 }
